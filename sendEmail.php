@@ -17,13 +17,13 @@
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'gurukuindonesia1@gmail.com';
-            $mail->Password = 'gurukuindonesiA1';
+            $mail->Username = 'YourEmail@gmail.com';
+            $mail->Password = 'YourEmailPassword';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = '587';
 
-            $mail->setFrom('gurukuindonesia1@gmail.com');
-            $mail->addAddress('gurukuindonesia1@gmail.com');
+            $mail->setFrom('YourEmail@gmail.com');
+            $mail->addAddress('YourEmail@gmail.com');
 
             $mail->isHTML(true);
             $mail->Subject = 'Pesan diterima';
