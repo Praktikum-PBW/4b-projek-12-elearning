@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../fonts/poppins//Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins-Regular, sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 4em;
+}
+
+.flex-column .nav-item:hover {
+  background-color: #9c9c9c;
+}
+
+.active {
+  background-color: #9c9c9c !important;
+}
+
+.card-body-icon {
+  position: absolute;
+  opacity: 0.4;
+  z-index: 0;
+  top: 25px;
+  right: 5px;
+  font-size: 90px;
+}
+
+.side-bar {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar-menu.collapse {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-menu {
+    display: block;
+  }
+}
